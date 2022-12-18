@@ -1,0 +1,104 @@
+* {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.footer-item {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    max-width: 860px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container__header {
+    background: #d6d6d6;
+    margin-top: 50px;
+    box-shadow: 0 -2rem 5rem rgb(0 0 0 / 18%);
+}
+.container__main {
+    /*flex-direction: column;*/
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
+}
+
+.inner {
+    display: flex;
+    padding: 10px;
+}
+
+.inner__main {
+    flex-direction: column;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.about {
+    padding: 0 10px;
+}
+
+.frame {
+    display: flex;
+    padding: 0 10px;
+}
+
+.frame-description {
+    padding: 0 10px;
+}
+
+.frame-list {
+    padding: 0 10px;
+    margin: 0;
+}
+
+.frame-list > li {
+    list-style: none;
+}
+
+.frame-link {
+    text-decoration: none;
+    color: black;
+}
+
+.frame-link:visited {
+    color: black;
+}
+
+.frame-link:hover {
+    color: #414141;
+    /*color: red;*/
+}
+.logo-school {
+    width: 50px; 
+    height: 57px;
+}
+
+@media (max-width: 860px) {
+    footer {
+        justify-content: space-around;
+    }
+}
